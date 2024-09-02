@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pagination">
+        <button id="prevBtn" onclick="loadPreviousPage()">Пред.</button>
+        <button id="nextBtn" onclick="loadNextPage()">След.</button>
+    </div>
+    <div class="container" id="filmsContainer">
+    </div>
+
+    <div class="modal" id="filmModal">
+        <div class="modal-content">
+            <div class="close" onclick="closeModal()">×</div>
+            <div class="modal-body" id="modalBody">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
